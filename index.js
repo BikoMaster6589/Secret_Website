@@ -29,7 +29,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
   session({
     store: new PgSession({
-      db: db, // Connection pool
+      pool: db, // Connection pool
       tableName: 'session', // Table name to store session data
     }),
     secret: process.env.SESSION_SECRET,
