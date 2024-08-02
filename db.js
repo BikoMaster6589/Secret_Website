@@ -1,5 +1,6 @@
 import pg from "pg"
 import env from "dotenv";
+const { Client } = pg;
 env.config();
 
 // const db = new pg.Client({
