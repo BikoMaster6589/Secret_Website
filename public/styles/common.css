@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    /* background-color: #00000026; */
+    /* z-index: -2; */
+    overflow-x: hidden;
+    overflow-y: scroll; 
+    background-color: var(--BgColor) ;  
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+/* Font-Families  */
+
+
+@font-face {
+    font-family: ae;
+   src: url(../fonts/Akira\ Expanded.ttf);
+}
+@font-face {
+    font-family: i-b;
+    src: url(../fonts/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: i-r;
+    src: url(../fonts/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: ov;
+    src: url(../fonts/OliveVillage-Regular.ttf);
+}
+
+@font-face {
+    font-family: p-b;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: p-r;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+
+/* Roots_Colors  */
+
+:root{
+    --PrimaryColor : #FFEF63;
+    --SecondaryColor : #D564F6;
+    --BgColor : #F6F2EB;
+    --SecondaryText : #969696;
+    --BorderColor : #373737;
+    --HeadingColor : #000311;
+}
+

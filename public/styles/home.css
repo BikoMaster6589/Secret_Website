@@ -1,0 +1,257 @@
+
+
+.Home_Page{
+    width: 95%;
+    height: 100%;
+    /* background-color: red; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    position: relative;
+    z-index:1 ;
+    
+}
+
+.Heading h1{
+    font-size: 3vw;
+    font-family: ov;
+    margin: 3vw 0 2vw 0;
+    letter-spacing: 0.1rem;
+    color: var(--HeadingColor);
+    position: relative;
+    z-index: 2;
+ 
+}
+
+.Heading h1::before{
+    content: "";
+    width: 37%;
+    height: 12.2%;
+    position: absolute;
+    top: -5%;
+    background-color: var(--PrimaryColor);
+    z-index: -1;
+    border-radius: 0.4375rem;
+}
+
+.Heading h1::after{
+    content: "";
+    width: 37%;
+    height: 12.2%;
+    position: absolute;
+    bottom: -8%;
+    background-color: var(--SecondaryColor);
+    z-index: -1;
+    border-radius: 0.4375rem;
+    right: 18%;
+}
+
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.1vw;
+    letter-spacing: 0.08rem;
+    font-family: p-r;
+    gap: 3.5vw;
+    font-weight: 400;
+}
+
+.content #long{
+    color: var(--SecondaryText);
+    font-weight: 400;
+}
+.content #small{
+    color: #414141;
+    font-weight: 400;
+}
+
+.content span{
+    font-family: p-b;
+    font-weight: 800;
+    color: #c500ff;
+}
+
+
+.buttons_illustrator{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    margin-top: 4vw;
+    position: relative;
+}
+
+.Btns{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 9rem;
+    
+}
+
+.Signing{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 0.5rem;
+}
+
+.Signing p{
+    font-size: 1.5vw;
+    font-family: p-r;
+
+}
+
+
+#SignUp , #SignIn{
+    display: flex;
+    gap: 1.5rem;
+    width: 70%;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+
+
+#SignUp , #SignUp p , #SignUp h1{
+    background-color: var(--SecondaryColor);
+}
+
+#SignIn{
+    border: 9px solid var(--SecondaryColor);
+}
+
+#SignUp h1 , #SignIn h1{
+    font-family: ae;
+}
+
+#SignUp p , #SignIn p{
+    font-size: 0.5vw;
+     font-family: i-r;
+     color:#4E4E4E;
+}
+
+
+
+/* Hover Effect */
+.image{
+    position: relative;
+    display: flex;
+   align-items: end;
+}
+
+.buttons_illustrator .image #img1{
+    height: 40vw;
+    width: 20vw;
+    position: relative;
+    left: 3vw;
+}
+
+.buttons_illustrator .image #img2{
+    height: 40vw;
+    width: 27vw;
+}
+
+.image #arr{
+    position: absolute;
+    height: 7vw;
+    width: 9vw;
+    left: 18vw;
+    top: 25vw;
+}
+
+.mobile-view{
+    display: none;
+}
+
+
+
+@media(max-width : 768px){
+
+.Heading h1{
+font-size: 7.3vw;
+}
+
+#long{
+    font-size: 2.8vw;
+}
+
+#small{
+    font-size: 3vw;
+}
+
+
+.image{
+    display: none;
+}
+
+.op{
+    display: none;
+}
+
+.Signing{
+display: none;
+}
+
+.mobile-view{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5vw;
+    gap: 15vw;
+}
+
+.mobile-view img{
+    height: 87vw;
+    width: 46vw;
+}
+
+.mobile-view .btns{
+    display: flex;
+    flex-direction: column;
+    gap: 4.5vw;
+}
+
+.mobile-view .btns .sign{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.po{
+    font-size: 3vw;
+    font-family: p-r;
+}
+
+.sign a{
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    font-family: p-b;
+    padding: 0.5rem 1rem;
+}
+
+.signup a{
+    background-color: var(--SecondaryColor);
+}
+
+.signin a{
+    border: 4px solid var(--SecondaryColor);
+}
+
+}

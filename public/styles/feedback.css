@@ -1,0 +1,168 @@
+.Main{
+    display: flex;
+    overflow: hidden;
+    margin-top: 3vw;
+    justify-content: space-evenly;
+    gap: 5vw;
+    margin: 1.5vw 2vw;
+    position: relative;
+    z-index: 2;
+}
+
+
+.Main .Content{
+ display: flex;
+ flex-direction: column;
+ gap: 2vw;
+}
+
+.Content .heading{
+display: flex;
+flex-direction: column;
+gap: 1.2vw;
+width: 70%;
+}
+
+.Content .heading h1{
+    font-size: 3vw;
+    font-family: ov;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    color: var(--HeadingColor);
+    position: relative;
+    z-index: 1;
+}
+
+.Content .heading h1::after{
+    content: "";
+    width: 24%;
+    height: 13.2%;
+    position: absolute;
+    bottom: -3%;
+    background-color: var(--SecondaryColor);
+    z-index: -1;
+    border-radius: 0.4375rem;
+    right: 59%;
+}
+
+.Content .heading h1::before{
+    content: "";
+    width: 20%;
+    height: 13.2%;
+    position: absolute;
+    top: 2%;
+    background-color: var(--PrimaryColor);
+    z-index: -1;
+    border-radius: 0.4375rem;
+    left: -4%;
+}
+
+
+.Content .heading h3{
+    font-size: 1.5vw;
+    font-family: p-r;
+    font-weight: 400;
+    color: var(--SecondaryText);
+}
+
+.Content .heading span{
+    color: var(--SecondaryColor);
+    font-weight: 500;
+    font-family: p-b;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.box h3{
+    font-family: i-r;
+    color: black;
+}
+
+.box form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+form textarea{
+    width: 47vw;
+    height: 20vw;
+    padding-top: 0;
+    padding-left: 0;
+    font-family: p-r;
+    font-size: 1rem;
+}
+
+form button{
+    padding: 0.5rem 1rem;
+    background-color: var(--SecondaryColor);
+    border: none;
+    font-family: i-b;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+@media(max-width : 768px){
+
+.Main{
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    margin-top: 5vw;
+}
+
+.Content .heading{
+    width: 100%;
+    gap: 8vw;
+}
+
+.Main .Content{
+    gap: 05vw;
+}
+
+
+.Content .heading h1{
+    font-size: 7vw;
+}
+
+.Content .heading h3{
+    font-size: 3vw;
+    width: 100%;
+}
+
+.Main img{
+    height: 57vw;
+    width: 41vw;
+    position: relative;
+    left: 61%;
+}
+
+
+.box h3{
+    font-family: i-r;
+    color: black;
+}
+
+.box form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+form textarea{
+    width: 369px;
+    height: 198px;
+}
+
+form button{
+    font-size: 3vw;
+}
+
+}
+
+

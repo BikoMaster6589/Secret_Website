@@ -1,0 +1,89 @@
+.Main{
+    overflow: hidden;
+    width: 95%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+.Main .Errormsg{
+    width: 50%;
+    margin:0 auto;
+    text-align: center;
+    font-size: 1vw;
+    margin-top: 3vw;
+    font-family: p-r;
+}
+
+.Main .Errormsg span{
+    color: red;
+}
+
+.Main .Errorimg img{
+    height: 25vw;
+    width: 25vw;
+}
+
+
+.Main .SErrormsg{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-size: 1vw;
+    margin-top: 3vw;
+    font-family: i-r;
+    font-weight: 100;
+    color: var(--SecondaryText);
+    letter-spacing: 0.1rem;
+}
+
+.Main .btn{
+    margin-top: 1vw;
+    padding: 0.5rem 1rem;
+    background-color: var(--SecondaryColor);
+    cursor: pointer;
+}
+
+.Main .btn a{
+    text-decoration: none;
+    font-size: 1vw;
+    color: black;
+    font-family: i-b;
+}
+
+
+@media(max-width : 768px){
+
+.Main{
+    width: 100%;
+    margin: 8vw 0 2vw 0;
+    gap: 10vw;
+}
+
+.Main .Errormsg{
+    width: 95%;
+    margin: auto;
+}
+
+.Main .SErrormsg{
+    font-size: 3vw;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.Main .Errormsg h1{
+font-size: 5vw;
+}
+
+.Main .Errorimg img{
+height: 56vw;
+width: 56vw;
+}
+
+.Main .btn a{
+    font-size: 4vw;
+}
+
+}

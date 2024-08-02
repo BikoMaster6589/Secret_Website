@@ -1,0 +1,61 @@
+<%- include('partials/header.ejs') %>
+
+
+<title>Signup_Section</title>
+<link rel="stylesheet" href="/styles/sign.css"/>
+
+
+<div class="Main">
+
+
+    <div class="left-Images">
+        <img id="img1" src="/images/Sign_up_1.png" alt="">
+        <img id="img2" src="/images/Sign_up_2.png" alt="">
+        <img id="img3" src="/images/Drawing/Dash-removebg-preview.png" alt="">
+    </div>
+    <div class="right-Images">
+        <img src="/images/Sign_up_3.png" alt="" id="img-4">
+        <img src="/images/Drawing/Sign_In_Drawing_2-removebg-preview.png" alt="" id="img-5">
+        <img src="/images/Drawing/Dash-removebg-preview.png" alt="" id="img-6">
+    </div>
+    <div class="backArrow">
+        <img id="back" src="/images/Arrow.jpg" alt="">
+        </div>
+
+<div class="SignUpBox">
+    <div class="heading">
+        <h1>User Signup</h1>
+    </div>
+    <form action="/register" method="POST">
+        <input type="email" placeholder="Email" required name="email">
+        <input type="text" placeholder="Password" name="password">
+        <button type="submit">SIGN UP</button>
+    </form>
+   <div class="Orpara">
+        <hr id="line1">
+        <p>Or sign up with</p>
+        <hr id="line2">
+    </div>
+   
+    <a href="/auth/google" class="google">
+            <img src="/images/google.jpg" alt="">
+            <h3>Google</h3>
+    </a>
+  <a id="Text" href="/signin" >Already have an account ?</a>
+</div>
+
+
+</div>
+
+<script>
+    var img = document.querySelector("#back");
+    
+    img.addEventListener("click",()=>{
+        window.location.href = 'http://localhost:3000';
+    })
+</script>
+
+<%- include('partials/footer.ejs') %>
+
+
+

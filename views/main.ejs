@@ -1,0 +1,50 @@
+<%- include('partials/header.ejs') %>
+
+
+<title>Signup_Section</title>
+<link rel="stylesheet" href="/styles/main_edit.css"/>
+
+<div class="Main">
+
+<div class="IMAGE">
+    <img src="/images/main_content_2.png" alt="">
+    <img src="/images/Drawing/Dash-removebg-preview.png" alt="">
+    
+    <img src="/images/Drawing/Dash-removebg-preview.png" alt="">
+
+</div>
+
+
+
+    <div class="image-1">
+        <img src="/images/main_content_1.png" alt="">
+    </div>
+    <div class="Content">
+        <% if (locals.content) { %>
+         <div class="main-box">
+            <h2><%= content %> </h2>
+         </div>
+        <% }  else {%>
+      <div class="main-box">
+        <h2>Click on Edit to Edit Your Secret</h2>
+      </div> <% } %>
+
+<div class="edit-btn">
+    <a href="/edit">EDIT</a>
+</div>
+<div class="btns">
+    <a href="/logout" role="button">Log Out</a>
+    <!-- <a href="">Add Secret</a> -->
+</div>
+</div>
+
+
+<div class="feedback">
+    <a href="/feedback">Feedback</a>
+</div>
+
+</div>
+
+
+
+<%- include('partials/footer.ejs') %>

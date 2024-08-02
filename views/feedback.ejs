@@ -1,0 +1,36 @@
+
+<title>Signup_Section</title>
+<link rel="stylesheet" href="/styles/feedback.css"/>
+
+
+<%- include('partials/header.ejs') %>
+
+
+
+
+<div class="Main">
+
+
+    <div class="image">
+        <img src="/images/feedback.png" alt="">
+    </div>
+    <div class="Content">
+<div class="heading">
+    <h1>THAT'S IT <span>!</span></h1>
+    <h3>We appreciate you taking the time to explore our website. Your support and interest mean a lot to us. If you have any <span>feedback</span> or questions, please don’t hesitate to express</h3>
+
+</div>
+    <div class="box">
+        <h3>Feedback Box</h3>
+        <form action="/feed" method="post">
+            <textarea name="feed" id="areaoftext" TextMode="MultiLine">
+            </textarea>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+
+    </div>
+</div>
+
+
+<%- include('partials/footer.ejs') %>

@@ -1,0 +1,95 @@
+<%- include('partials/header.ejs') %>
+
+<title>Hero_Section</title>
+<link rel="stylesheet" href="/styles/home.css" />
+
+<div class="Home_Page">
+  <div class="Heading">
+    <h1>Secret Website 🤐</h1>
+  </div>
+  <div class="content">
+    <p id="long">
+      Secret Website is an innovative online platform dedicated to providing
+      users with exclusive, curated content and tools. It offers a unique blend
+      of cutting-edge technology, user-friendly design, and
+      <span>privacy-focused features</span> to ensure a seamless and secure
+      browsing experience. Whether you're seeking hidden gems in entertainment,
+      resources for personal development, or advanced digital tools, Secret
+      Website is your go-to destination for discovering the internet's best-kept
+      secrets.
+    </p>
+    <p id="small">
+      Before Deploying your Secret Please Consider making an
+      <span>account</span> so that you can access your secret safely
+    </p>
+  </div>
+
+
+  <div class="buttons_illustrator">
+      <div class="image">
+      <img  id="img1" src="/images/Home_Page.png" alt="" />
+      <img  id="arr" src="/images/Drawing/Arrow-removebg-preview.png" alt="">
+    </div>
+    <div class="Btns">
+      <div class="Signing">
+        <p>Shhh... Welcome to the Club!</p>
+        <form action="/signup" method="get">
+        <button id="SignUp" type="submit">
+        </form>
+          <h1>SIGN</h1>
+          <p class="op">
+            Ready to unlock the internet's best-kept secrets? Sign up now to
+            access our top-secret content, so exclusive even we don’t know
+            what's in there! 😂 Don’t worry, your secret’s safe with us – unless
+            it's about where the last piece of pizza went. Join now and discover
+            what everyone else is missing out on. 🤫✨
+          </p>
+          <h1>UP</h1>
+        </button>
+      </div>
+
+<div class="mobile-view">
+ <img src="/images/Home_Page.png" alt="">
+  <div class="btns">
+   <div class="sign signup">
+    <p class="po">Shhh... Welcome to the Club!</p>
+    <a href="/signup">SIGN UP</a>
+   </div>
+   <div class="sign signin">
+    <p class="po">Welcome Back, Agent!</p>
+    <a href="/signin">SIGN IN</a>
+   </div>
+  </div>
+</div>
+
+
+
+      <div class="Signing">
+        <p>Welcome Back, Agent!</p>
+        <form action="/signin" method="get">
+          <button id="SignIn" type="submit">
+          </form>
+      
+          
+          <h1>SIGN</h1>
+          <p class="op">
+            You've successfully infiltrated the inner circle! Your mission,
+            should you choose to accept it, involves enjoying exclusive content
+            so secret, even we had to sign an NDA. Remember, mum's the word –
+            except when you’re laughing out loud! Ready to dive into the hidden
+            treasures? Let’s get started before someone gets suspicious. 🤫🔍✨
+          </p>
+          <h1>IN</h1>
+        </button>
+      </div>
+    </div>
+
+    <div class="image">
+        <img id="img2" src="/images/Home_Page_2.png" alt="" />
+      </div>
+
+   
+  </div>
+</div>
+
+<%- include('partials/footer.ejs') %>

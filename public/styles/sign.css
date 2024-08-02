@@ -1,0 +1,256 @@
+.Main {
+  position: relative;
+  overflow-y: hidden;
+  z-index: 2;
+}
+
+.backArrow img {
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 50%;
+  margin: 1rem 0 0 1rem;
+  height: 2.5vw;
+  cursor: pointer;
+  position: fixed;
+}
+
+.left-Images img {
+  position: absolute;
+  height: 30vw;
+  width: 25vw;
+}
+
+.left-Images #img1 {
+  height: 18vw;
+  width: 18vw;
+  top: 11vw;
+  left: 0.5vw;
+}
+.left-Images #img2 {
+  height: 18vw;
+  width: 19vw;
+  bottom: -2vw;
+  left: 16vw;
+}
+
+.left-Images #img3 {
+  z-index: -1;
+  top: 6vw;
+  height: 3vw;
+  width: 13vw;
+  position: absolute;
+  left: 19vw;
+}
+
+.right-Images img {
+  position: absolute;
+  height: 20vw;
+  width: 15vw;
+  right: 2rem;
+}
+
+.right-Images #img-4 {
+  height: 15vw;
+  width: 20vw;
+  top: 8vw;
+}
+.right-Images #img-5 {
+  height: 10vw;
+  width: 10vw;
+  top: 40vw;
+  right: 6vw;
+}
+.right-Images #img-6 {
+  height: 5vw;
+  width: 11vw;
+  top: 38vw;
+  z-index: -1;
+  right: 20vw;
+}
+
+.SignUpBox {
+  background-color: white;
+  border-radius: 2.5625rem;
+  margin: auto;
+  margin-top: 2vw;
+  box-shadow: -7px -6px 35px 0px rgba(0, 0, 0, 0.25),
+    7px 8px 35px 0px rgba(0, 0, 0, 0.25);
+  width: 43.375rem;
+  height: 46.6875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.SignUpBox .heading h1 {
+  font-size: 2.5vw;
+  margin-top: 2vw;
+  font-family: ov;
+  font-weight: 400;
+  color: var(--HeadingColor);
+  position: relative;
+  z-index: 1;
+}
+
+.SignUpBox .heading h1::after {
+  content: "";
+  width: 63%;
+  height: 17.2%;
+  position: absolute;
+  bottom: -21%;
+  background-color: var(--SecondaryColor);
+  z-index: -1;
+  border-radius: 0.4375rem;
+  right: -5%;
+}
+
+.SignUpBox .htm h1::after {
+  content: "";
+  width: 63%;
+  height: 17.2%;
+  position: absolute;
+  bottom: -21%;
+  background-color: var(--PrimaryColor);
+  z-index: -1;
+  border-radius: 0.4375rem;
+  right: -5%;
+}
+
+.SignUpBox form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 2.5vw;
+  margin-top: 3.5vw;
+}
+
+.SignUpBox form input {
+  padding: 1rem;
+  font-size: 1.2vw;
+}
+
+.SignUpBox form button {
+  width: 25%;
+  font-size: 1.2vw;
+  padding: 0.5rem;
+  margin: auto;
+  font-family: i-b;
+  cursor: pointer;
+  background-color: var(--SecondaryColor);
+  border: none;
+}
+
+#line1,
+#line2 {
+  transform: rotate(90deg);
+  height: 3rem;
+  width: 0.1rem;
+  background-color: black;
+  border: none;
+}
+
+.Orpara {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-family: i-r;
+}
+
+.google {
+  margin-top: 2rem;
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  gap: 0.5rem;
+  border: 4px solid var(--SecondaryColor);
+  font-family: i-b;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2vw;
+}
+
+.google img {
+  height: 1.7vw;
+  width: 1.7vw;
+}
+
+#Text {
+  text-decoration: none;
+  font-family: i-r;
+  color: var(--SecondaryColor);
+  font-size: 1vw;
+  margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+  .Main {
+    height: 100%;
+  }
+
+  .left-Images img,
+  .right-Images img {
+    display: none;
+  }
+
+  .SignUpBox {
+    margin-top: 30vw;
+    width: 85%;
+    height: 75%;
+  }
+
+  .SignUpBox .heading h1 {
+    font-size: 5.5vw;
+    margin-top: 1.5rem;
+  }
+
+  .SignUpBox form input {
+    font-size: 4vw;
+  }
+
+  .SignUpBox form input::placeholder {
+    font-size: 3.5vw;
+  }
+
+  .SignUpBox form button {
+    width: 100%;
+    font-size: 4vw;
+    padding: 1rem 1.5rem;
+  }
+
+  .google {
+    font-size: 3vw;
+  }
+
+  .google img {
+    height: 4vw;
+    width: 4vw;
+  }
+
+  #Text {
+    font-size: 3vw;
+    margin-top: 2vw;
+  }
+
+  #back {
+    height: 8vw;
+    width: 8vw;
+    border: 2px solid black;
+  }
+
+  .left-Images #img2 {
+    display: block;
+    top: 4vw;
+    height: 37vw;
+    width: 44vw;
+    z-index: -1;
+  }
+  .left-Images #img1 {
+    display: block;
+    height: 23vw;
+    width: 31vw;
+    top: 150vw;
+    left: 1vw;
+  }
+}
