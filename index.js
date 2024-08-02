@@ -15,7 +15,6 @@ env.config();
 // Connecting Database
 
 import db from "./db.js";
-// import { Client } from "pg";
 
 // MiddleWare
 
