@@ -7,9 +7,13 @@ import session from "express-session";
 import passport from "passport";
 import { Strategy } from "passport-local";
 import GoogleStrategy from "passport-google-oauth2";
+import connectPGSimple from 'connect-pg-simple';
+
 
 const saltRound = 10;
 const app = express();
+const PgSession = connectPGSimple(session);
+
 env.config();
 
 // Connecting Database
@@ -24,6 +28,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(
   session({
+    store: new PgSession({
+      db: db, // Connection pool
+      tableName: 'session', // Table name to store session data
+    }),
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: true,
