@@ -225,4 +225,9 @@ form input{
     #io{
         margin: 5vw 0;
     }
+
+    #button{
+        font-size: 2vw;
+        padding: 1vw 0.5vw;
+    }
 }
