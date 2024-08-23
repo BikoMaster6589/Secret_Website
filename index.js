@@ -251,7 +251,7 @@ passport.use(
     },
     async (accessToken, refreshToken, profile, cb) => {
       try {
-        console.log(profile);
+        console.log(profile[6]);
         const email = profile.emails[0].value; // Correctly extract email
         const result = await db.query("SELECT * FROM users WHERE email = $1", [
           email,
