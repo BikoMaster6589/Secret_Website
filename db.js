@@ -3,7 +3,7 @@ import env from "dotenv";
 
 const { Client } = pg;
 env.config();
-
+// psdknjsdbgj
 const db = new Client({
   // connectionString: process.env.DB_URL,
   user: process.env.DB_USER,
